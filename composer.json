@@ -1,0 +1,31 @@
+{
+    "name": "yireo/yireo_bootstrap3",
+    "license": "OSL-3",
+    "type": "magento2-module",
+    "version": "0.3.0",
+    "homepage": "https://github.com/yireo/Yireo_Bootstrap3",
+    "description": "Adds Twitter Bootstrap 3 to Magento 2",
+    "keywords":[ "composer-installer", "magento"],
+    "authors": [
+        {
+            "name": "Jisse Reitsma (Yireo)",
+            "email": "jisse@yireo.com"
+        }
+    ],
+    "require": {
+        "magento/framework": "100.*",
+        "php": ">=5.6.0"
+    },
+    "require-dev":{
+        "phpunit/phpunit":"*",
+        "composer/composer":"*@dev"
+    },
+    "autoload": {
+        "psr-4": {
+            "Yireo\\Bootstrap3\\": ""
+        },        
+        "files": [
+            "source/registration.php"
+        ]
+    }
+}
